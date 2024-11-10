@@ -1,0 +1,124 @@
+.main-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  padding: 25px;
+  max-width: 450px;
+  margin: 30px auto;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+/* Glow effect on hover */
+.main-card:hover {
+  box-shadow: 0 4px 16px rgba(52, 87, 229, 0.6), 0 0 20px rgba(61, 80, 216, 0.3);
+}
+
+/* Heading styles */
+.heading-container {
+  margin-bottom: 15px;
+}
+
+.heading {
+  font-size: 1.5em;
+  color: #e2502c;
+  margin: 0;
+}
+
+.enter-details {
+  color: #120c0a; /* Orange color for the 'Enter Details' heading */
+  font-size: 1.2em;
+  margin: 15px 0;
+}
+
+/* Input field styling */
+.input-field {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+  transition: box-shadow 0.3s ease;
+}
+
+.input-field:focus {
+  box-shadow: 0 0 8px rgba(255, 165, 0, 0.4);
+  outline: none;
+}
+
+/* Submit button */
+.submit-button {
+  background-color:#4489e3; /* Updated to orange */
+  color: white;
+  padding: 12px;
+  margin-top: 15px;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #e2502c;
+}
+
+/* Result and error styling */
+.result {
+  margin-top: 20px;
+  font-size: 1em;
+  color: #333;
+}
+
+.result a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.error-message {
+  color:#e2502c;
+  margin-top: 10px;
+  font-size: 0.95em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .main-card {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  .heading {
+    font-size: 1.6em;
+  }
+
+  .enter-details {
+    font-size: 1.1em;
+  }
+
+  .submit-button {
+    font-size: 1em;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-card {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .heading {
+    font-size: 1.4em;
+  }
+
+  .enter-details {
+    font-size: 1em;
+  }
+
+  .submit-button {
+    font-size: 0.95em;
+    padding: 8px;
+  }
+}

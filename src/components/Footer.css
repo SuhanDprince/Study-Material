@@ -1,0 +1,28 @@
+.footer {
+  background-color: #e2502c;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  margin-top: auto;
+  width: 100%;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .quote-text {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .quote-text {
+    font-size: 1rem; /* Slightly smaller font for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .quote-text {
+    font-size: 0.9rem; /* Further reduce size for small screens */
+  }
+}

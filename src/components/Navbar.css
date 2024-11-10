@@ -1,0 +1,60 @@
+
+.navbar {
+  background-color: #e2502c; /* Orange color for the layout */
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.0rem;
+  transition: padding 0.3s, font-size 0.3s; /* Smooth transition for responsiveness */
+  position: relative;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .navbar {
+    font-size: 1rem;
+    padding: 0.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    font-size: 0.8rem;
+    padding: 0.6rem;
+  }
+}
+
+/* Glowing effect and typing animation */
+.motivational-quote p {
+  font-size: 1.2rem;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(23, 22, 21, 0.6), 0 0 10px rgba(12, 12, 12, 0.8), 0 0 15px rgba(255, 165, 0, 1);
+  animation: typing 2s steps(30) 1s 1 normal both, glow 1.5s ease-in-out infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+}
+
+/* Typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Glowing text effect */
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px rgba(255, 165, 0, 0.6), 0 0 10px rgba(255, 165, 0, 0.8), 0 0 15px rgba(255, 165, 0, 1);
+  }
+  50% {
+    text-shadow: 0 0 10px rgba(255, 165, 0, 0.9), 0 0 20px rgba(255, 165, 0, 1), 0 0 30px rgba(255, 165, 0, 1.2);
+  }
+  100% {
+    text-shadow: 0 0 5px rgba(255, 165, 0, 0.6), 0 0 10px rgba(255, 165, 0, 0.8), 0 0 15px rgba(255, 165, 0, 1);
+  }
+}
