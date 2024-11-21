@@ -67,7 +67,7 @@ const MainCard = () => {
       </div>
       {driveLink && (
         <p className="result">
-          Drive Link: <a href={driveLink} target="_blank" rel="noopener noreferrer">{driveLink}</a>
+          Drive Link: <a href={driveLink} target="_blank" rel="noopener noreferrer">{subject}</a>
         </p>
       )}
       {error && <p className="error-message">{error}</p>}
